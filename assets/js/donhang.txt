@@ -1,0 +1,167 @@
+var itemList = {
+    sp001: {
+        name: "Siem Reap - Phnom Penh",
+        price: 6000000,
+        photo: "assets/img/SiemReap.webp",
+    },
+    sp002: {
+        name: "Tour Đặc Sắc Hàn Quốc 5N4Đ cho mùa Lá Đỏ",
+        price: 23000000,
+        photo: "assets/img/HanQuoc.webp",
+    },
+    sp003: {
+        name: "Tour du thuyền Singapore - Malaysia đẳng cấp 5 sao - 4 ngày 3 đêm",
+        price: 26000000,
+        photo: "assets/img/Sing.webp",
+    },
+    sp004: {
+        name: "Du lịch Ý [Rome - Pisa - Florence - Venice - Milan]",
+        price: 46900000,
+        photo: "assets/img/Itali.webp",
+    },
+    sp005: {
+        name: "Tour Du Lịch Đà Lat bao vé máy bay khứ hồi (3 Ngày 2 Đêm)",
+        price: 4000000,
+        photo: "assets/img/DaLat.webp",
+    },
+    sp006: {
+        name: "Tour du lịch Hà Nội - biển Nha Trang 4 ngày 3 đêm",
+        price: 6500000,
+        photo: "assets/img/NhaTrang.webp",
+    },
+    sp007: {
+        name: "Du Lịch Đà Nẵng - Hà Nội - Hạ Long - Tuần Châu - Hoa Lư - Tam Cốc - 5 Ngày 4 Đêm",
+        price: 6000000,
+        photo: "assets/img/DaNang.webp",
+    },
+    sp008: {
+        name: "Tour Du Lịch Phú Quốc 2 Ngày 1 Đêm - Đông Đảo",
+        price: 4000000,
+        photo: "assets/img/PhuQuoc.webp",
+    },
+    sp009: {
+        name: "Du lịch Nam Phi [Johannesburg - Pretoria - Soweto - Cape Town]",
+        price: 62000000,
+        photo: "assets/img/NamPhi.webp",
+    },
+    sp010: {
+        name: "Du lịch Anh - Scotland [Lễ hội hoa Chelsea]]",
+        price: 89990000,
+        photo: "assets/img/Anh.webp",
+    },
+    sp011: {
+        name: "Du lịch Cao Bằng - Bản Giốc - Bắc Kạn - Ba Bể - Hà Nội",
+        price: 8000000,
+        photo: "assets/img/CaoBang.webp",
+    },
+    sp012: {
+        name: "Miền Tây - Đồng Tháp - Tràm Chim - Thiền Viện Trúc Lâm Chánh Giác",
+        price: 6400000,
+        photo: "assets/img/MienTay.webp",
+    },
+};
+
+function showCart() {
+    var TotalPretax = 0;
+    var tax = 0;
+    var discount = 0;
+    var TotalCost = 0;
+   
+    for (var i = 0; i < localStorage.length; i++) {
+        var item = itemList[localStorage.key(i)];
+        var photo = item.photo;
+        var name = item.name;
+        var price = item.price;
+        var orderNumber = localStorage.getItem(localStorage.key(i));
+        var number = localStorage.getItem(localStorage.key(i));
+
+        
+
+        if (number == null)
+            continue;
+
+        var giohang_td = document.createElement("td");
+         
+        var tr = document.createElement("tr");
+
+        tr.appendChild(giohang_td);
+
+        giohang_td.innerHTML =
+            "<img src='" + photo + "' class= 'round-figure' width = '100px' />";
+
+        var giohang_td_ten = document.createElement("td");
+
+        tr.appendChild(giohang_td_ten);
+
+        giohang_td_ten.innerHTML = "<p>" + name + "</p>";
+
+        var giohang_td_soluong = document.createElement("td");
+
+        tr.appendChild(giohang_td_soluong);
+
+        giohang_td_soluong.innerHTML = "<p>" + number + "</p>";
+
+        var giohang_td_price = document.createElement("td");
+
+        tr.appendChild(giohang_td_price);
+
+        giohang_td_price.innerHTML = "<p>" + price.toLocaleString('vi-VN', {
+            style: 'currency',
+            currency: 'VND'
+        }) + "</p>";
+
+        var giohang_td_thanhtien = document.createElement("td");
+
+        tr.appendChild(giohang_td_thanhtien);
+
+        giohang_td_thanhtien.innerHTML = "<p>" + (price * orderNumber).toLocaleString('vi-VN', {
+            style: 'currency',
+            currency: 'VND'
+        }) + "</p>";
+
+        var giohang_td_remove = document.createElement("td");
+
+        tr.appendChild(giohang_td_remove);
+
+        giohang_td_remove.innerHTML = "<a href='donhang.html' data-code= '"+localStorage.key(i)+"' onclick='removeCart(this.dataset.code)' ><i class='fa fa-trash icon-pink'></i></a>";
+        var cartBody = document.getElementById("cart-body")
+
+        cartBody.appendChild(tr);
+
+        TotalPretax = TotalPretax + (price * orderNumber);
+
+       
+    }
+   
+    var cart_footer = document.getElementById("tongthanhtien");
+
+    cart_footer.innerHTML =  "<p>" + TotalPretax.toLocaleString('vi-VN', {
+        style: 'currency',
+        currency: 'VND'
+    }) + "</p>";
+
+    
+}
+
+function removeCart(code) {
+    if (typeof window.localStorage[code] !== "undefined") {
+
+        console.log(code)
+   
+        window.localStorage.removeItem(code);
+
+        document.getElementById("cart-body").getElementsByTagName('tbody')[0].innerHTML ="";
+       
+       
+        showCart();
+        
+   
+    }
+
+}
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+#slide{
+    width: 1000px; height: 450px; margin:auto; position:relative;
+}
+#slide #hinh{
+    width: 100%; height:100%;
+}
+#slide .fa-chevron-circle-left{
+    position: absolute;
+    top: 45%;
+    left:30px;
+    font-size: 32px;
+    color:aliceblue;
+}
+#slide .fa-chevron-circle-right{
+    position: absolute;
+    top: 45%;
+    right:30px;
+    font-size: 32px;
+    color:aliceblue;
+}
+.tieude{
+    text-align: center;
+   
+}
+.ct{
+    margin: 20px;
+    background-color: rgb(225, 225, 231);
+    padding: 20px;
+}
+.tieude1{
+    padding: 0px;
+    margin: 10px;
+}
+.giatien{
+    color: blue;
+    background-color: azure;
+}
+.soluong{
+    padding: 20px;
+    
+}
+.nutdat{
+    background-color: #154054;
+    color: aliceblue;
+    padding: 10px;
+}
+.nutdat:hover{
+    background-color:rgb(38, 183, 240);
+}

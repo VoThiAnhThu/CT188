@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta class="header-link" charset="UTF-8">
+    <meta class="header-link" http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta class="header-link" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="images/ico" href="assets/img/titlelogo.jpg" />
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/quenmk.css">
+    <link rel="stylesheet" href="assets/css/sanpham.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.3.0-web/css/all.css">
+    <title>Quên Mật Khẩu</title>
+</head>
+<body>
+     <!--Header-->
+     <header>
+      <div class="header row">
+          <div class="col-6 col-md-2">
+            <a href="trangchu.html"> <img class="header-logo" src="/assets/img/logo.webp" alt="Logo"></a>
+          </div>
+          <div class="header-nav col-6 col-md-8">
+              <div class="container text-center">
+                  <div class="row">
+                    <div class="col-2">
+                      <a class="header-link" href="trangchu.html">Trang chủ</a>
+                    </div>
+                    <div class="col-2">
+                      <a class="header-link" href="sanpham.html">Tour</a>
+                    </div>
+                    <div class="col-2">
+                      <a class="header-link" href="gioithieu.html">Giới thiệu</a>
+                    </div>
+                    <div class="col-2">
+                      <a class="header-link" href="lienhe.html">Liên hệ </a>
+                    </div>
+                    <div class="col-2">
+                      <a class="header-link" href="dangnhap.html">Đăng nhập</a>
+                    </div>
+                    <div class="col-2">
+                      <a class="header-link" href="dangky.html">Đăng ký</a>
+                    </div>
+                  </div>
+                </div> 
+          </div>
+          <div class="header_find col-6 col-md-2">
+            <form action="timkiem.html" method="get" >
+              <input class="header-input" required type="text" placeholder="Tìm kiếm...">
+              <i class="header-icon fa-search fa-solid fa-magnifying-glass"></i>
+              <a href="donhang.html">
+                <i class="header-icon fas fa-shopping-cart cart1"></i>    
+            </a>
+          </form>     
+          </div>
+        </div>
+      </header>
+
+<!--Main-->
+    <div class="container">
+        <form id="form" action="/" onsubmit="return validatequenmk()">
+            <h1>Quên Mật Khẩu</h1>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email">
+            </div>
+            <div class="input-control">
+                <label for="password">Mật Khẩu Mới</label>
+                <input id="password"name="password" type="password">
+            </div>
+            <div class="input-control">
+                <label for="password2">Nhập Lại Mật Khẩu</label>
+                <input id="password2"name="password2" type="password">
+            </div>
+            <button class="update" type="submit">Cập Nhật Mật Khẩu</button>
+        </form>
+    </div>
+
+<!--Footer-->
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="row">
+              <div class="col-4">
+                <div class="footer_nav">
+                    <h5>NEED HELP?</h5>
+                    <p>We are here 24/7 to support you!</p>
+                    <p>info@webtravel.vn</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="footer_nav">
+                    <h5>LIÊN HỆ</h5>
+                    <p>Địa chỉ:quận Ninh Kiều,TP.Cần Thơ</p>
+                    <p>Điện thoại: 19006750</p>
+                    <p>Emai:travel@gmail.vn</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="footer_nav">
+                    <h5>WEBSITE CÔNG TY</h5>
+                    <a href="">
+                        <i class="footer-icon fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="footer-icon fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="footer-icon fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="">
+                        <i class="footer-icon fa-brands fa-google"></i>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <script src="assets/jquerry/jquery-3.6.4.min.js"></script>
+        <script src="assets/js/dangnhap.js"> </script>
+</body>
+
+</html>

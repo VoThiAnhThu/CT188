@@ -1,0 +1,33 @@
+.dh {
+    margin-left: 92%;
+    font-size: 20px;
+    text-align: right;
+    color:#fefbfc;
+    font-weight: bold;
+    background-color: #154054;
+}
+
+table{
+    text-align: center;
+}
+
+th{
+    background-color: #154054;
+    color: rgb(251, 252, 253);
+}
+
+h1{
+    
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: white;
+    height: 45px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: lighter;
+    display: block;
+    width:fit-content;
+    padding: 15px 30px 50px 30px;
+    margin-left: 40%;
+    background-color:rgb(22, 83, 124);
+}

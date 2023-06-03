@@ -1,0 +1,160 @@
+.main {
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+/* slider */
+.slider {
+    height: 700px;
+}
+
+.slider-img {
+    height: 700px;
+}
+
+/*Tour*/
+.tour {
+    padding: 40px 0px;
+    
+}
+
+.tour-title{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    font-weight:600 ;
+    color: #000;
+    
+}
+
+.tour-title:hover {
+    color: #32aad6;
+}
+
+.tour-title-drs {
+    text-align: center;
+    margin: 20px 0px 40px ;
+}
+
+.tour-book {
+
+}
+
+.tour-container {
+
+}
+
+.tour-img {
+    width: 100%;
+}
+.tour-item {
+    border: groove 1px #ddd;
+    padding: 15px 0px 10px;
+    font-weight: 700;
+}
+
+.tour-drs {
+    font-size: 16px;
+    display: block;
+    color: #575454;
+    border-bottom: #a18d8d63 solid 1px;
+    padding-bottom: 16px;
+}
+
+.tour-drs:hover {
+    color:#32aad6
+}
+
+.tour-price {
+    color: #32aad6;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.album {
+    padding: 40px 0px;
+}
+
+.alb-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.alb-drs {
+    margin: 20px 0px 40px ;
+}
+.alb-container {
+    height: auto;
+    width: 50%;
+    position: relative;
+}
+
+.alb-img-first {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all .3s ease;
+}
+.alb-img {
+    width: 100%;
+    display: block;
+    transition: all .3s ease;
+}
+.alb-img-first:hover {
+    transform: scale(1.3);
+}
+.alb-img:hover {
+    transform: scale(1.3); /* cỡ zoom khi di chuột vào */
+}
+
+/*Choose*/
+.choose {
+    padding-top: 40px;
+    background-color: #ccc;
+}
+.choose-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.chose-row {
+    padding-top: 20px;
+}
+
+.choose-item {
+    position: relative;
+}
+.choose-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #32aad6;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+.choose-content {
+    padding: 0px 30px;
+}
+.choose-header {
+    color: #32aad6;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px dashed #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.choose-text {
+    color: #fff;
+    margin-bottom: 16px;
+}

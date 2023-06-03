@@ -1,0 +1,43 @@
+.container{
+    margin-bottom: 80px;
+  }
+  
+#form{
+    width: 440px;
+    height: 425px;
+    margin: 80px auto;
+    padding: 20px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0, 0.5);
+  }
+
+#form h1 {
+    font-weight: 600;
+    color: #0f2027;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.input-control input {
+    margin-bottom: 10px;
+    border: 2px solid #114d82;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    }
+
+.update {
+    position: relative;
+    left: 15%;
+    width: 249px;
+    height: 40px;
+    margin-top: 18px;
+    border-radius: 9px;
+    color: #fff;
+    background-color: rgb(41, 57, 194);;
+}
+.update:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta class="header-link" charset="UTF-8">
+    <meta class="header-link" http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta class="header-link" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="images/ico" href="assets/img/titlelogo.jpg" />
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/sanpham.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.3.0-web/css/all.css">
+    <title>TOUR</title>
+</head>
+<body>
+     <!--Header-->
+     <header>
+        <div class="header row">
+            <div class="col-6 col-md-2">
+              <a href="trangchu.html"> <img class="header-logo" src="/assets/img/logo.webp" alt="Logo"></a>
+            </div>
+            <div class="header-nav col-6 col-md-8">
+                <div class="container text-center">
+                    <div class="row">
+                      <div class="col-2">
+                        <a class="header-link" href="trangchu.html">Trang chủ</a>
+                      </div>
+                      <div class="col-2">
+                        <a class="header-link" href="sanpham.html">Tour</a>
+                      </div>
+                      <div class="col-2">
+                        <a class="header-link" href="gioithieu.html">Giới thiệu</a>
+                      </div>
+                      <div class="col-2">
+                        <a class="header-link" href="lienhe.html">Liên hệ </a>
+                      </div>
+                      <div class="col-2">
+                        <a class="header-link" href="dangnhap.html">Đăng nhập</a>
+                      </div>
+                      <div class="col-2">
+                        <a class="header-link" href="dangky.html">Đăng ký</a>
+                      </div>
+                    </div>
+                  </div> 
+            </div>
+            <div class="header_find col-6 col-md-2">
+              <form action="timkiem.html" method="get" >
+                <input class="header-input" required type="text" placeholder="Tìm kiếm...">
+                <i class="header-icon fa-search fa-solid fa-magnifying-glass"></i>
+                <a href="donhang.html">
+                  <i class="header-icon fas fa-shopping-cart cart1"></i>    
+              </a>
+            </form>     
+            </div>
+          </div>
+        </header>
+
+
+    <!--Main-->
+    <main>
+        <h1 class="tieudedau">Tour Ngoài Nước</h1>
+        <div class="ftuor">
+         <article>
+            <section>
+                <img src="assets/img/SiemReap.webp" class="ftour-img">
+                <h4>Siem Reap - Phnom Penh (Khách sạn 3*, Tour Tiết Kiệm)</h4><br/>
+                <a class="tour" href="siemreap.html">Xem chi tiết</a>
+                <p align="left">6.000.000đ</p>
+                <span>
+                    Số Lượng: <input id="sp001" type="number" max="100" min="0" value="0"/>
+                 </span>
+                 <button  onclick="addCart('sp001')">Đặt Tour</button>
+                          
+            </section>
+         </article>
+         <article>
+            <section>
+                <image src="assets/img/HanQuoc.webp" class="ftour-img">
+                    <h4>Tour Đặc Sắc Hàn Quốc 5N4Đ cho mùa Lá Đỏ</h4><br/>
+                    <a class="tour" href="hanquoc.html">Xem chi tiết</a>
+                    <p align="left">23.000.000đ</p>
+                          <span>
+                                 Số Lượng: <input  id="sp002" type="number" max="100" min="0" value="0"/>
+                            </span>
+                            <button  onclick="addCart('sp002')" >Đặt Tour</button>
+                       
+            </section>
+         </article>
+         <article>
+            <section>
+                <image src="assets/img/Sing.webp" class="ftour-img">
+                    <h4>Tour du thuyền Singapore đẳng cấp - 4 ngày 3 đêm</h4><br/>
+                    <a class="tour" href="singapore.html">Xem chi tiết</a>
+                    <p align="left">26.000.000đ</p>
+                          <span>
+                                Số Lượng: <input  id="sp003" type="number" max="100" min="0" value="0"/>
+                            </span>
+                            <button  onclick="addCart('sp003')" >Đặt Tour</button>    
+                         
+            </section>
+        </article>
+     </div>
+     <div class="ftuor">
+        <article>
+            <section>
+                <image src="assets/img/Itali.webp" class="ftour-img">
+                    <h4>Du lịch Ý [Rome - Pisa - Florence - Venice - Milan]</h4><br/>
+                    <a class="tour" href="y.html">Xem chi tiết</a>
+                    <p align="left">46.900.000đ</p>
+                          <span>
+                                Số Lượng: <input  id="sp004" type="number" max="100" min="0" value="0"/>
+                            </span>
+                            <button  onclick="addCart('sp004')" >Đặt Tour</button>    
+                         
+            </section>
+        </article>
+        <article>
+            <section>
+                <image src="assets/img/NamPhi.webp" class="ftour-img">
+                    <h4>Du lịch Nam Phi [Johannesburg-Cape Town]</h4><br/>
+                    <a class="tour" href="namphi.html">Xem chi tiết</a>
+                    <p align="left">62.000.000đ</p>
+                          <span>
+                                Số Lượng: <input  id="sp009" type="number" max="100" min="0" value="0"/>
+                            </span>
+                            <button  onclick="addCart('sp009')" >Đặt Tour</button>    
+                         
+            </section>
+        </article>
+        <article>
+            <section>
+                <image src="assets/img/Anh.webp" class="ftour-img">
+                    <h4>Du lịch Anh - Scotland [Lễ hội hoa Chelsea]</h4><br/>
+                    <a class="tour" href="anh.html">Xem chi tiết</a>
+                    <p align="left">89.990.000đ</p>
+                          <span>
+                                Số Lượng: <input  id="sp010" type="number" max="100" min="0" value="0"/>
+                            </span>
+                            <button  onclick="addCart('sp010')" >Đặt Tour</button>    
+                         
+            </section>
+        </article>
+     </div>
+        
+     
+     <h1 class="tieudedau">Tour Trong Nước</h1>
+        <div class="ftuor">
+            <article>
+                <section>
+                    <image src="assets/img/DaLat.webp" class="ftour-img">
+                        <h4>Tour Du Lịch Đà Lat bao vé máy bay khứ hồi (3 Ngày 2 Đêm)</h4><br/>
+                        <a class="tour" href="dalat.html">Xem chi tiết</a>
+                        <p align="left">4.000.000đ</p>
+                              <span>
+                                    Số Lượng: <input id="sp005" type="number" max="100" min="0" value="0"/>
+                                </span>
+                                <button  onclick="addCart('sp005')" >Đặt Tour</button>
+                           
+                      
+                </section>
+            </article>
+            <article>
+                <section>
+                    <image src="assets/img/NhaTrang.webp" class="ftour-img">
+                        <h4>Tour du lịch Hà Nội - biển Nha Trang 4 ngày 3 đêm</h4><br/>
+                        <a class="tour" href="nhatrang.html">Xem chi tiết</a>
+                        <p align="left">6.500.000đ</p>
+                              <span>
+                                     Số Lượng: <input  id="sp006" type="number" max="100" min="0" value="0"/>
+                                </span>
+                                <button onclick="addCart('sp006')" >Đặt Tour</button>
+                            
+                </section>
+            </article>
+            <article>
+                <section>
+                    <image src="assets/img/DaNang.webp" class="ftour-img">
+                        <h4>Du Lịch Đà Nẵng - Hà Nội - 5 Ngày 4 Đêm</h4><br/>
+                        <a class="tour" href="danang.html">Xem chi tiết</a>
+                        <p align="left">6.000.000đ</p>
+                              <span>
+                                     Số Lượng: <input id="sp007" type="number" max="100" min="0" value="0"/>
+                                </span>
+                                <button  onclick="addCart('sp007')" >Đặt Tour</button>
+                            
+                          
+                      
+                </section>
+            </article>
+        </div>
+        <div class="ftuor">
+            <article>
+                <section>
+                    <image src="assets/img/PhuQuoc.webp" class="ftour-img">
+                        <h4>Tour Du Lịch Phú Quốc 2 Ngày 1 Đêm - Đông Đảo</h4><br/>
+                        <a class="tour" href="phuquoc.html">Xem chi tiết</a>
+                        <p align="left">4.000.000đ</p>
+                              <span>
+                                    Số Lượng: <input  id="sp008" type="number" max="100" min="0" value="0"/>
+                                </span>
+                                <button  onclick="addCart('sp008')" >Đặt Tour</button>    
+                             
+                </section>
+            </article>
+            <article>
+                <section>
+                    <image src="assets/img/CaoBang.webp" class="ftour-img">
+                        <h4>Du lịch Cao Bằng - Bản Giốc - Bắc Kạn - Ba Bể - Hà Nội</h4><br/>
+                        <a class="tour" href="caobang.html">Xem chi tiết</a>
+                        <p align="left">8.000.000đ</p>
+                              <span>
+                                    Số Lượng: <input  id="sp011" type="number" max="100" min="0" value="0"/>
+                                </span>
+                                <button  onclick="addCart('sp011')" >Đặt Tour</button>    
+                             
+                </section>
+            </article>
+            <article>
+                <section>
+                    <image src="assets/img/MienTay.webp" class="ftour-img">
+                        <h4>Miền Tây - Đồng Tháp - Thiền Viện Trúc Lâm Chánh Giác</h4><br/>
+                        <a class="tour" href="mientay.html">Xem chi tiết</a>
+                        <p align="left">6.400.000đ</p>
+                              <span>
+                                    Số Lượng: <input  id="sp012" type="number" max="100" min="0" value="0"/>
+                                </span>
+                                <button  onclick="addCart('sp012')" >Đặt Tour</button>    
+                             
+                </section>
+            </article>
+        </div>
+    </main>
+   <!--Footer-->
+   <footer class="footer">
+    <div class="container text-center">
+        <div class="footer-z"><a href="#">
+            <image class="ztop" src="assets/img/top.svg"></image>
+        </a>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="footer_nav">
+                <h5>NEED HELP?</h5>
+                <p>We are here 24/7 to support you!</p>
+                <p>info@webtravel.vn</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="footer_nav">
+                <h5>LIÊN HỆ</h5>
+                <p>Địa chỉ:quận Ninh Kiều,TP.Cần Thơ</p>
+                <p>Điện thoại: 19006750</p>
+                <p>Emai:travel@gmail.vn</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="footer_nav">
+                <h5>WEBSITE CÔNG TY</h5>
+                <a href="">
+                    <i class="footer-icon fa-brands fa-facebook"></i>
+                </a>
+                <a href="">
+                    <i class="footer-icon fa-brands fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="footer-icon fa-brands fa-linkedin"></i>
+                </a>
+                <a href="">
+                    <i class="footer-icon fa-brands fa-google"></i>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/sanpham.js"></script>
+    <script src="assets/js/donhang.js"></script>
+    <script src="assets/jquerry/jquery-3.6.4.min.js"></script>
+</body>
+</html>

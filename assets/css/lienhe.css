@@ -1,0 +1,129 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.div {
+    font-family: Open Sans,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222324;
+    background-color: #fff;
+    grid-template-columns: 8fr 3fr;
+    display: grid;
+    float:left;
+	margin-right:60px;
+}
+
+h4{
+	font-size: 16px;
+    color: #686876;
+    text-transform: uppercase;
+}
+
+p{
+	margin: 0 0 15px 0;
+    font-family: 'Roboto',Helvetica,Arial,sans-serif;
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+button{
+	font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: #32aad6;
+    border-radius: 5px;
+    color: #fff;
+	appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    margin: 0em;
+    padding: 8px 16px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+	
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+#hoten, #email{
+	width: 200px;
+	height: 25px;
+	line-height: 0.5;
+}
+label {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20px;
+    margin-bottom: 10px;
+	color: #2f2f33 !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+}
+input{
+	height: 45px;
+    padding: 0 20px;
+    color:#222324;
+    line-height: 45px;
+    border-color: #ebebeb;
+    box-shadow: none;
+}
+
+
+main{
+	display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width:1000px;
+    grid-area: main-cell;
+    padding: 0 px;
+    /* grid-template-columns: 3fr 1fr; */
+    grid-area: main-cell;
+    padding: 0 5px; 
+}
+.test{
+	grid-template-columns: 3fr 1fr;
+    display: grid;
+}
+.main_content {
+    padding: 40px 50px;
+}
+.footer_content {
+    display: flex;
+
+    /* padding: 0 50px; */
+}
+.footer_main {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+
+}   
+
+.contact {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+.contact span {
+    display: inline-block;
+    margin: 4px 6px;
+}

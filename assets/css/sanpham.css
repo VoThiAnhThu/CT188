@@ -1,0 +1,86 @@
+
+h1{
+    text-transform: uppercase;
+    font-family:'Open Sans', sans-serif;
+    color: #0b0b0b;
+    height: 34px;
+    text-align:justify;
+    font-size: 34px;
+    font-weight: lighter;
+    margin: 0 auto;
+    display:block;
+    width:fit-content;
+    padding: 15px 35px 5px 35px;
+}
+
+
+.ftuor{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 20px;
+}
+
+.ftour-img {
+    width: 88%;
+    height: 320px;
+}
+
+.ftuor section{
+    
+    border: solid 1px;
+    border-radius:5px ;
+    border-color:   #dbd7d9 ;
+    text-align: center;
+    max-width: 550px;
+    width: fit-content;
+    margin-right: 5px;
+    margin: 3px;
+}
+.ftuor p{
+    color: #32aad6;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 15px;
+}
+section{
+    font-size: 20px;
+    width: 490px;
+    height: 550px;
+
+}
+
+
+h4{
+    text-transform: uppercase;
+    font-family:'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    margin: 0 auto;
+    display:block;
+    width:fit-content;
+    padding: 0px 35px 5px 35px;
+}
+.tour{ 
+    border: 1px;
+    color:#fff;
+    text-decoration: none;
+    background-color: rgb(3, 57, 94);
+    padding: 10px;
+    
+}
+.tour:hover{
+    color:#fff;
+    background-color:rgb(38, 183, 240);
+}
+.tieudedau{
+    position: relative;
+    padding: 10px 500px 50px 500px;
+    color: white;
+    
+    background-color:rgb(22, 83, 124);
+}
+
+main {
+    margin: 10px 0px;
+}

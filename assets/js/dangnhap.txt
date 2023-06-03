@@ -1,0 +1,55 @@
+function validateDangNhap() {
+   
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+    
+        validateInputs();
+    });
+
+    var email = document.getElementById('email'); 
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
+    if (!filter.test(email.value)) { 
+             alert('Hay nhap dia chi email hop le.\nExample@gmail.com');
+             email.focus; 
+             return false; 
+    }
+
+    var p1 = document.getElementById('password');
+    var passReg = /.{8,}/;
+    if(!passReg.test(p1.value)) {
+        alert('Mật khẩu phải có ít nhất 8 kí tự');
+        p1.focus;
+        return false;
+    }
+
+    alert("Đăng nhập tài khoản thành công")
+        
+    return true;
+}
+function validatequenmk(){
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+    });
+    var email = document.getElementById('email'); 
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
+    if (!filter.test(email.value)) { 
+               alert('Hay nhap dia chi email hop le.\nExample@gmail.com');
+               email.focus; 
+               return false; 
+    }
+    var password = document.getElementById('password');
+    var passReg = /.{8,}/;
+    var fpassword = document.getElementById('password2');
+    if (!passReg.test(fpassword.value)) { 
+        alert('Mật khẩu phải có ít nhất 8 kí tự');
+        fpassword.focus; 
+        return false; 
+     }
+    else if (fpassword.value == '' || password.value.length < 8 || password.value != fpassword.value) {
+        alert('Password không khớp.');
+        return false;
+    }
+    alert('Cập nhật mật khẩu thành công!');
+    return true;
+    }
+    
